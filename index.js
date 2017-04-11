@@ -20,7 +20,7 @@ app.get('/', function(req,res) {
 
 app.get('/webhook/', function(req, res) {
   if(req.query['hub.verify_token'] ===
-    'token') {
+    'youmakethis') {
       res.send(req.query['hub.challenge'])
     }
     res.send('no entry')
@@ -112,7 +112,7 @@ function sendTextMessage(recipientId, messageText) {
       text: 'You asked: ' + messageText + '. \n youre dog is about a: ' + randomNum + '\n' + stringToSend + res
     }
   };
-  
+
 function randomInt (low, high) {
     return Math.floor(Math.random() * (high - low) + low);
 }
