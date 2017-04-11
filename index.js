@@ -118,7 +118,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: 'You asked: ' + messageText + '. \n youre dog is about a: ' + randomNum + '\n' + stringToSend
+      text: ' youre dog is about a: ' + randomNum + '\n' + stringToSend
     }
   };
 
