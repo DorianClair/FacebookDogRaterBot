@@ -75,20 +75,29 @@ function receivedMessage(event) {
     // If we receive a text message, check to see if it matches a keyword
     // and send back the example. Otherwise, just echo the text we received.
     switch (messageText) {
-      case 'generic':
+      case 'hi':
         sendGenericMessage(senderID);
         break;
 
       default:
-        sendTextMessage(senderID, messageText);
+        sendGenericMessage(senderID, "Only pictures please");
     }
   } else if (messageAttachments) {
-    sendTextMessage(senderID, "Message with attachment received");
+    sendTextMessage(senderID, " ");
   }
 }
 
 function sendGenericMessage(recipientId, messageText) {
   // To be expanded in later sections
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: messageText
+    }
+  };
+  callSendAPI(messageData);
 }
 function log(data){
    console.log(data);
@@ -102,7 +111,7 @@ function sendTextMessage(recipientId, messageText) {
     stringToSend = 'Hey thats not that bad!';
   }
   if(randomNum < 7) {
-   stringToSend = 'Oooooh.... Not that bad... atleast you got higher than ' + (randomNum-1);
+   stringToSend = '.. Not that bad... atleast you got higher than ' + (randomNum-1);
   }
   var messageData = {
     recipient: {
