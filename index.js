@@ -109,7 +109,7 @@ function sendTextMessage(recipientId, messageText) {
       id: recipientId
     },
     message: {
-      text: 'You asked: ' + messageText + '. \n youre dog is about a: ' + randomNum + '\n' + stringToSend + res
+      text: 'You asked: ' + messageText + '. \n youre dog is about a: ' + randomNum + '\n' + stringToSend
     }
   };
 
