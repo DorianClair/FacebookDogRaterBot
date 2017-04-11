@@ -76,7 +76,7 @@ function receivedMessage(event) {
     // and send back the example. Otherwise, just echo the text we received.
     switch (messageText) {
       case 'hi':
-        sendGenericMessage(senderID);
+        sendGenericMessage(senderID, " ");
         break;
 
       default:
