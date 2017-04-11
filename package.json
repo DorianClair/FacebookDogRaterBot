@@ -1,0 +1,25 @@
+{
+  "name": "dograter",
+  "version": "1.0.0",
+  "description": "Rates dogs for you",
+  "main": "index.js",
+  "scripts": {
+    "test": "none yet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "add later"
+  },
+  "keywords": [
+    "heroku",
+    "messenger",
+    "bot"
+  ],
+  "author": "Dorian Clair",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}
