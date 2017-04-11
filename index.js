@@ -102,7 +102,7 @@ function sendTextMessage(recipientId, messageText) {
     stringToSend = 'Hey thats not that bad!';
   }
   if(randomNum < 7) {
-   stringToSend = 'Oooooh.... Not that bad... atleast you got higher than ' + (randomNum-1)
+   stringToSend = 'Oooooh.... Not that bad... atleast you got higher than ' + (randomNum-1);
   }
   var messageData = {
     recipient: {
@@ -116,6 +116,7 @@ function sendTextMessage(recipientId, messageText) {
 function randomInt (low, high) {
     return Math.floor(Math.random() * (high - low) + low);
 }
+classSendAPI(messageData);
 
 }
 
